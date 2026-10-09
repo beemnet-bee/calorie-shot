@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0F1F"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="50%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="dotGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="120" fill="url(#bgGrad)"/>
+  <!-- Camera aperture / "shot" mark -->
+  <g transform="translate(256 232)">
+    <circle r="120" fill="none" stroke="url(#ringGrad)" stroke-width="20"/>
+    <circle r="60" fill="url(#dotGrad)"/>
+    <!-- Aperture blades -->
+    <path d="M0 -120 L34 -50 L-34 -50 Z" fill="#0A0F1F"/>
+    <path d="M120 0 L50 34 L50 -34 Z" fill="#0A0F1F"/>
+    <path d="M0 120 L-34 50 L34 50 Z" fill="#0A0F1F"/>
+    <path d="M-120 0 L-50 -34 L-50 34 Z" fill="#0A0F1F"/>
+  </g>
+  <text x="256" y="448" font-family="Space Grotesk, sans-serif" font-size="48" font-weight="700" fill="url(#ringGrad)" text-anchor="middle" letter-spacing="-1">CalorieShot</text>
+</svg>

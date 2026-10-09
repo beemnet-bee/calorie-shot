@@ -1,0 +1,29 @@
+{
+  "name": "CalorieShot — Snap it. Know it. Track it.",
+  "short_name": "CalorieShot",
+  "description": "AI-powered nutrition tracking. Snap a photo of your meal and instantly see calories, macros, and full nutrition.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait",
+  "background_color": "#0A0F1F",
+  "theme_color": "#0A0F1F",
+  "categories": ["health", "food", "lifestyle", "utilities"],
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Scan Meal",
+      "short_name": "Scan",
+      "url": "/?action=scan",
+      "description": "Take or upload a photo of your meal"
+    }
+  ],
+  "prefer_related_applications": false
+}
